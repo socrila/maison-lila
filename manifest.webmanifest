@@ -1,0 +1,13 @@
+{
+  "name": "Maison Lila",
+  "short_name": "Maison Lila",
+  "description": "Agenda familial simple pour organiser la maison, les repas, les notes et les choses à faire.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f7f3f1",
+  "theme_color": "#8b6876",
+  "orientation": "portrait-primary",
+  "lang": "fr",
+  "icons": [{ "src": "icons/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }]
+}
