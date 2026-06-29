@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#8b6876">
+  <meta name="description" content="Maison Lila, agenda familial simple pour organiser la maison.">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Maison Lila">
+  <title>Maison Lila</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icons/icon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <aside class="side">
+    <div class="brand"><span>ML</span><div><strong>Maison Lila</strong><small>la maison, l'esprit leger</small></div></div>
+    <nav id="nav" aria-label="Navigation"></nav>
+    <button class="ghost" id="backupBtn">Sauvegarde</button>
+  </aside>
+  <main>
+    <header class="top">
+      <button class="round mobile" id="menuBtn">☰</button>
+      <div><p id="today" class="overline"></p><h1 id="title">Bonjour Alicia</h1></div>
+      <button class="round" id="themeBtn">☼</button>
+    </header>
+    <section id="view" class="view"></section>
+  </main>
+  <nav class="bottom" id="bottomNav" aria-label="Navigation mobile"></nav>
+  <div class="modal" id="modal" hidden><div class="box"><button class="close" id="closeModal">×</button><div id="modalBody"></div></div></div>
+  <div class="toast" id="toast"></div>
+  <input type="file" id="importFile" accept="application/json" hidden>
+  <script src="app.js"></script>
+</body>
+</html>
